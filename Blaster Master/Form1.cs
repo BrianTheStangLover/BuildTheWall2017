@@ -966,7 +966,7 @@ namespace BlasterMaster
 
                                 // Flag off and set governing delay (~5 round p/sec)
                                 shootKeyPress = false;
-                                delayNextShot = 0; //Added Minigun BB
+                                delayNextShot = 12; //Added Minigun BB
 
                             }
                         }
@@ -974,8 +974,8 @@ namespace BlasterMaster
                 }
 
                 // Dec governeing delay
-                if (delayNextShot > 1)
-                    delayNextShot = 0; //Added Minigun BB
+                if (delayNextShot > 0)
+                    delayNextShot -= 1; //Added Minigun BB
 
                 // Key flags off
                 moveKeyPress[0] = false;
@@ -1218,8 +1218,8 @@ namespace BlasterMaster
                                     // 1. Player's bullet(s)
                                     rect1.X = playerbullet[i, c].getRectX();
                                     rect1.Y = playerbullet[i, c].getRectY();
-                                    rect1.Width = playerbullet[i, c].getRectW();
-                                    rect1.Height = playerbullet[i, c].getRectH();
+                                    rect1.Width = 48; //Hard Code Width
+                                    rect1.Height = 32; //Hard Code Height
 
                                     // 2. Enemy rect ...
                                     rect2.X = invaders[j].getRectX();
@@ -1281,7 +1281,7 @@ namespace BlasterMaster
                                                 {
                                                     // Fetch random pickup to drop
                                                     bool voidPickup = false;
-                                                    c = getRandomNumber(0, 3);
+                                                    c = getRandomNumber(3, 3); //Made only custom drop spawn
 
                                                     switch (c)
                                                     {
