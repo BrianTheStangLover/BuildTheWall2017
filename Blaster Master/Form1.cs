@@ -1598,7 +1598,7 @@ namespace BlasterMaster
                 shootKeyUP = true;
             }
 
-            // F2 key to Start new game
+            // ENTER key to Start new game
             if (GetAsyncKeyState(13) != 0)
             {
                 gameOver = false;
@@ -2131,8 +2131,8 @@ namespace BlasterMaster
             // Render text ...
             if (tScales.getTAcaleC() > 10)
             {
-                DrawText(graphicsBuffer, "Press F2 ", 207, 279, 16, FontStyle.Bold, Brushes.Black);
-                DrawText(graphicsBuffer, "Press F2 ", 209, 281, 16, FontStyle.Bold, Brushes.Yellow);
+                DrawText(graphicsBuffer, "Press ENTER ", 207, 279, 16, FontStyle.Bold, Brushes.Black);
+                DrawText(graphicsBuffer, "Press ENTER ", 209, 281, 16, FontStyle.Bold, Brushes.Yellow);
             }
 
             //                           :: Render animated high score table (top 5 players) ::
