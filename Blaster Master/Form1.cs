@@ -2140,9 +2140,9 @@ namespace BlasterMaster
             // Table heading: top 5 players
             for (i = 0; i <= 2; i++)
             {
-                DrawText(graphicsBuffer, "TOP 5 PLAYERS", 160 + i, 400 + i, 23, FontStyle.Bold, Brushes.DarkRed);
+                DrawText(graphicsBuffer, "TOP 5 BUILDERS", 160 + i, 400 + i, 23, FontStyle.Bold, Brushes.DarkRed);
             }
-            DrawText(graphicsBuffer, "TOP 5 PLAYERS", 160 + i, 400 + i, 23, FontStyle.Bold, Brushes.Yellow);
+            DrawText(graphicsBuffer, "TOP 5 BUILDERS", 160 + i, 400 + i, 23, FontStyle.Bold, Brushes.Yellow);
 
             // Score table: names & scores with drop shadow and white face
             for (i = 0; i <= 4; i++)
