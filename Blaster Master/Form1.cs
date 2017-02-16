@@ -1599,7 +1599,7 @@ namespace BlasterMaster
             }
 
             // F2 key to Start new game
-            if (GetAsyncKeyState(113) != 0)
+            if (GetAsyncKeyState(13) != 0)
             {
                 gameOver = false;
                 doingSOGame = true;
