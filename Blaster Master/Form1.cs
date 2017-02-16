@@ -1909,10 +1909,6 @@ namespace BlasterMaster
             //DrawText(graphicsBuffer, "Wall Height: " + Convert.ToString(level), 452, 742, 16, FontStyle.Bold, Brushes.Black);
             //DrawText(graphicsBuffer, "Current Height: " + Convert.ToString(level), 275, 740, 16, FontStyle.Bold, Brushes.White);
 
-            // Score + high score
-            DrawText(graphicsBuffer, "Current Bricks Layed: " + Convert.ToString(score), 10, 10, 16, FontStyle.Bold, Brushes.White);
-            DrawText(graphicsBuffer, "Highest Bricks Layed: " + Convert.ToString(highScore), 275, 10, 16, FontStyle.Bold, Brushes.White);
-
             // Firepower
             switch (player.getFirePowerLevel())
             {
@@ -2257,6 +2253,9 @@ namespace BlasterMaster
                doingSOLevel = false;
                genWorkingCounter = 0;
             }
+            // Score + high score
+            DrawText(graphicsBuffer, "Current Bricks Layed: " + Convert.ToString(score), 10, 10, 16, FontStyle.Bold, Brushes.White);
+            DrawText(graphicsBuffer, "Highest Bricks Layed: " + Convert.ToString(highScore), 275, 10, 16, FontStyle.Bold, Brushes.White);
         }
 
         private void doStartOfGame()
@@ -2279,10 +2278,10 @@ namespace BlasterMaster
             else if (genWorkingCounter < 250)
             {
                graphicsBuffer.DrawImage(keyInstructions, new Rectangle(180, 300, keyInstructions.Width, keyInstructions.Height), 0, 0, keyInstructions.Width, keyInstructions.Height, GraphicsUnit.Pixel, ImageAtt);
-               DrawText(graphicsBuffer, "SHOOT", 180, 335, 12, FontStyle.Bold, Brushes.White);
-               DrawText(graphicsBuffer, "LEFT", 272, 335, 12, FontStyle.Bold, Brushes.White);
-               DrawText(graphicsBuffer, "RIGHT", 360, 335, 12, FontStyle.Bold, Brushes.White);
-               DrawText(graphicsBuffer, "Game Controls", 225, 355, 14, FontStyle.Bold, Brushes.Red);
+               DrawText(graphicsBuffer, "SHOOT", 180, 435, 12, FontStyle.Bold, Brushes.White);
+               DrawText(graphicsBuffer, "LEFT", 272, 435, 12, FontStyle.Bold, Brushes.White);
+               DrawText(graphicsBuffer, "RIGHT", 360, 435, 12, FontStyle.Bold, Brushes.White);
+               DrawText(graphicsBuffer, "Game Controls", 225, 455, 14, FontStyle.Bold, Brushes.Red);
             }
             else
             {
