@@ -2475,7 +2475,7 @@ namespace BlasterMaster
             this.Refresh();
 
             processStartmS = timeGetTime();
-            regulatedDelay(5000);
+            regulatedDelay(2000);
         }
 
         private void WipeGraphicsBuffer()
