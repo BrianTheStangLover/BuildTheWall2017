@@ -1917,7 +1917,7 @@ namespace BlasterMaster
             switch (player.getFirePowerLevel())
             {
                 case 1:
-                    s = "x1 (Unlimited Shots)";
+                    s = "x1 (Unlimited Bricks)";
                     break;
                 case 3:
                     s = "x3 (" + player.getX3FireAmmo().ToString() + " Shots Remaining)";
@@ -1927,8 +1927,8 @@ namespace BlasterMaster
                     break;
             }
 
-            DrawText(graphicsBuffer, "Firepower: " + s, 12, 702, 14, FontStyle.Regular, Brushes.Black);
-            DrawText(graphicsBuffer, "Firepower: " + s, 10, 700, 14, FontStyle.Regular, Brushes.White);
+            DrawText(graphicsBuffer, "Bricks: " + s, 12, 702, 14, FontStyle.Regular, Brushes.Black);
+            DrawText(graphicsBuffer, "Bricks: " + s, 10, 700, 14, FontStyle.Regular, Brushes.White);
 
             // Sheild 
            // switch (player.hasSheild())
