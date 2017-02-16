@@ -2277,11 +2277,11 @@ namespace BlasterMaster
             }
             else if (genWorkingCounter < 250)
             {
-               graphicsBuffer.DrawImage(keyInstructions, new Rectangle(180, 300, keyInstructions.Width, keyInstructions.Height), 0, 0, keyInstructions.Width, keyInstructions.Height, GraphicsUnit.Pixel, ImageAtt);
-               DrawText(graphicsBuffer, "SHOOT", 180, 435, 12, FontStyle.Bold, Brushes.White);
-               DrawText(graphicsBuffer, "LEFT", 272, 435, 12, FontStyle.Bold, Brushes.White);
-               DrawText(graphicsBuffer, "RIGHT", 360, 435, 12, FontStyle.Bold, Brushes.White);
-               DrawText(graphicsBuffer, "Game Controls", 225, 455, 14, FontStyle.Bold, Brushes.Red);
+               graphicsBuffer.DrawImage(keyInstructions, new Rectangle(180, 500, keyInstructions.Width, keyInstructions.Height), 0, 0, keyInstructions.Width, keyInstructions.Height, GraphicsUnit.Pixel, ImageAtt);
+               DrawText(graphicsBuffer, "SHOOT", 180, 535, 12, FontStyle.Bold, Brushes.White);
+               DrawText(graphicsBuffer, "LEFT", 272, 535, 12, FontStyle.Bold, Brushes.White);
+               DrawText(graphicsBuffer, "RIGHT", 360, 535, 12, FontStyle.Bold, Brushes.White);
+               DrawText(graphicsBuffer, "Game Controls", 225, 555, 14, FontStyle.Bold, Brushes.Red);
             }
             else
             {
