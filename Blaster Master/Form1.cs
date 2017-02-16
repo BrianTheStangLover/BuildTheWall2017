@@ -1560,7 +1560,7 @@ namespace BlasterMaster
             if (newGame)
             {
                 level = 1;
-                lives = 4;
+                lives = 15;
                 playerPivotPos = 61;
                 player.setPlayerDead(false);
                 playerExplosion = false;
