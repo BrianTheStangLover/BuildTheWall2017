@@ -2123,7 +2123,7 @@ namespace BlasterMaster
             // Render title
             graphicsBuffer.DrawImage(this.gameTitle, new Rectangle(45, 85, this.gameTitle.Width, this.gameTitle.Height), 0, 0, this.gameTitle.Width, this.gameTitle.Height, GraphicsUnit.Pixel, ImageAtt);
 
-            //                                        :: F2 to start a new game ::
+            //                                      
 
             // Render star
             graphicsBuffer.DrawImage(star, new Rectangle(75, 230, 450, 125), 0, 0, star.Width, star.Height, GraphicsUnit.Pixel, ImageAtt);
