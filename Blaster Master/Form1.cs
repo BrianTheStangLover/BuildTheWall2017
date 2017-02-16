@@ -1977,7 +1977,7 @@ namespace BlasterMaster
                         // Add new player
                         if (playersName == null)
                         {
-                            playersName = "WallBuilder4Lyfe";
+                            playersName = "Player";
                         }
 
                         Top5PlayerName[i] = playersName;
@@ -2008,7 +2008,7 @@ namespace BlasterMaster
                 // Read player names & scores from file
                 for (int i = 0; i <= 4; i++)
                 {
-                    Top5PlayerName[i] = "WallBuilder4Lyfe";
+                    Top5PlayerName[i] = "            Player";
                     Top5PlayerScore[i] = "0";
                 }
 
@@ -2020,7 +2020,7 @@ namespace BlasterMaster
                 // Load defaults, file dosen't exist 
                 for (int i = 0; i <= 4; i++)
                 {
-                    Top5PlayerName[i] = "WallBuilder4Lyfe";
+                    Top5PlayerName[i] = "Player";
                 }
 
                 for (int i = 0; i <= 4; i++)
@@ -2131,8 +2131,8 @@ namespace BlasterMaster
             // Render text ...
             if (tScales.getTAcaleC() > 10)
             {
-                DrawText(graphicsBuffer, "Press ENTER ", 207, 279, 16, FontStyle.Bold, Brushes.Black);
-                DrawText(graphicsBuffer, "Press ENTER ", 209, 281, 16, FontStyle.Bold, Brushes.Yellow);
+                DrawText(graphicsBuffer, "Press ENTER ", 200,100, 16, FontStyle.Bold, Brushes.Black);
+                DrawText(graphicsBuffer, "Press ENTER ", 200, 100, 16, FontStyle.Bold, Brushes.Yellow);
             }
 
             //                           :: Render animated high score table (top 5 players) ::
