@@ -1588,12 +1588,12 @@ namespace BlasterMaster
             }
 
             // Fire 
-            if (GetAsyncKeyState(17) != 0)
+            if (GetAsyncKeyState(32) != 0)
             {
                 //if (shootKeyUP)
                     shootKeyPress = true;
             }
-            else if (GetAsyncKeyState(17) == 0)
+            else if (GetAsyncKeyState(32) == 0)
             {
                 shootKeyUP = true;
             }
