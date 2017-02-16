@@ -16,7 +16,7 @@ namespace BlasterMaster
         private System.Drawing.Bitmap bullet;
         private ImageAttributes ImagingAtt = new ImageAttributes();
 
-        public clsPlayerBullet(int x, int y) : base(x, y, 32, 16)
+        public clsPlayerBullet(int x, int y) : base(x, y, 48, 32)
         {
             //------------------------------------------------------------------------------------------------------------------
             // Purpose: Class constructor  
