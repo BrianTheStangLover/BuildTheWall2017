@@ -2131,8 +2131,8 @@ namespace BlasterMaster
             // Render text ...
             if (tScales.getTAcaleC() > 10)
             {
-                DrawText(graphicsBuffer, "Press F2 To Play", 207, 279, 16, FontStyle.Bold, Brushes.Black);
-                DrawText(graphicsBuffer, "Press F2 To Play", 209, 281, 16, FontStyle.Bold, Brushes.Yellow);
+                DrawText(graphicsBuffer, "Press F2 ", 207, 279, 16, FontStyle.Bold, Brushes.Black);
+                DrawText(graphicsBuffer, "Press F2 ", 209, 281, 16, FontStyle.Bold, Brushes.Yellow);
             }
 
             //                           :: Render animated high score table (top 5 players) ::
@@ -2307,11 +2307,11 @@ namespace BlasterMaster
             int e = 0;
             int c = 0;
 
-            DrawText(graphicsBuffer, ":: BLASTER MASTER World Edition -- ßeta rev: 1.0 -- 12/03/10 :: ", 20, 50, 12, FontStyle.Regular, Brushes.Red);
+            DrawText(graphicsBuffer, "Wall Builder Simulator Alpha v.1 ", 20, 50, 12, FontStyle.Regular, Brushes.Red);
 
             // Precision regulated  delay
             initDelay();
-            DrawText(graphicsBuffer, "Precision regulated delay initialized", 20, 100, 12, FontStyle.Regular, Brushes.White);
+            DrawText(graphicsBuffer, "Loading Bricks.exe....", 20, 100, 12, FontStyle.Regular, Brushes.White);
 
             // Update screen
             this.Refresh();
@@ -2322,13 +2322,13 @@ namespace BlasterMaster
                 FSOUND_Init(44100, 32, 0);
 
                 // Good
-                DrawText(graphicsBuffer, "FMOD sound engine initialize", 20, 120, 12, FontStyle.Regular, Brushes.White);
+                DrawText(graphicsBuffer, "Deleting 33,000 Emails ...", 20, 120, 12, FontStyle.Regular, Brushes.White);
 
             }
             catch
             {
                 // Problems
-                DrawText(graphicsBuffer, "FMOD sound engine unable to initialize", 20, 120, 12, FontStyle.Regular, Brushes.White);
+                DrawText(graphicsBuffer, "Deleting 33,000 Emails ...", 20, 120, 12, FontStyle.Regular, Brushes.White);
                 sndEngineError = true;
             }
 
@@ -2356,7 +2356,7 @@ namespace BlasterMaster
                 catch
                 {
                     // Problems
-                    DrawText(graphicsBuffer, "FMOD sound engine ERROR", 20, 140, 12, FontStyle.Regular, Brushes.White);
+                    DrawText(graphicsBuffer, "CNN (Clinton News Network)", 20, 140, 12, FontStyle.Regular, Brushes.White);
                     sndEngineError = true;
                 }
 
@@ -2364,7 +2364,7 @@ namespace BlasterMaster
             }
             else
             {
-                DrawText(graphicsBuffer, "FMOD sound engine ERROR", 20, 140, 12, FontStyle.Regular, Brushes.White);
+                DrawText(graphicsBuffer, "CNN (Clinton News Network)", 20, 140, 12, FontStyle.Regular, Brushes.White);
             }
 
             // Update
@@ -2471,7 +2471,7 @@ namespace BlasterMaster
             // Paths ...
             paths = new clsPaths();
             j = timeGetTime();
-            DrawText(graphicsBuffer, "Sprites created in: " + Convert.ToString(j - k) + "mS", 20, 160, 12, FontStyle.Regular, Brushes.White);
+            DrawText(graphicsBuffer, "Liberal Lies Loaded in under: " + Convert.ToString(j - k) + "sec", 20, 160, 12, FontStyle.Regular, Brushes.White);
             DrawText(graphicsBuffer, "Done ...", 20, 180, 12, FontStyle.Regular, Brushes.White);
             this.Refresh();
 
@@ -2560,7 +2560,7 @@ namespace BlasterMaster
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
