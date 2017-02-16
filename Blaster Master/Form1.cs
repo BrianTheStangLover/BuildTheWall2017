@@ -1931,22 +1931,22 @@ namespace BlasterMaster
             DrawText(graphicsBuffer, "Firepower: " + s, 10, 700, 14, FontStyle.Regular, Brushes.White);
 
             // Sheild 
-            switch (player.hasSheild())
-            {
-                case true:
-                    i = player.getSheildTime();
-                    j = Convert.ToInt32(10 - (i / 50));
-                    s = j.ToString() + " Sec Remaining";
+           // switch (player.hasSheild())
+           // {
+            //    case true:
+            //        i = player.getSheildTime();
+            //        j = Convert.ToInt32(10 - (i / 50));
+             //       s = j.ToString() + " Sec Remaining";
 
-                    break;
-                case false:
-                    s = "Not Acquired";
-                    break;
-            }
+            //        break;
+           //     case false:
+                    //s = "Not Acquired";
+            //        break;
+           // }
 
             // Render
-            DrawText(graphicsBuffer, "Sheild: " + " " + s, 366, 702, 14, FontStyle.Regular, Brushes.Black);
-            DrawText(graphicsBuffer, "Sheild: " + " " + s, 368, 700, 14, FontStyle.Regular, Brushes.White);
+            //DrawText(graphicsBuffer, "Sheild: " + " " + s, 366, 702, 14, FontStyle.Regular, Brushes.Black);
+            //DrawText(graphicsBuffer, "Sheild: " + " " + s, 368, 700, 14, FontStyle.Regular, Brushes.White);
 
         }
 
