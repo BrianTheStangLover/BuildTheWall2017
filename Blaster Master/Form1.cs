@@ -2117,7 +2117,7 @@ namespace BlasterMaster
             int i = 0;
 
             // Render title
-            graphicsBuffer.DrawImage(this.gameTitle, new Rectangle(45, 85, this.gameTitle.Width, this.gameTitle.Height), 0, 0, this.gameTitle.Width, this.gameTitle.Height, GraphicsUnit.Pixel, ImageAtt);
+            graphicsBuffer.DrawImage(this.gameTitle, new Rectangle(45, 15, this.gameTitle.Width, this.gameTitle.Height), 0, 0, this.gameTitle.Width, this.gameTitle.Height, GraphicsUnit.Pixel, ImageAtt);
 
             //                                      
 
