@@ -1906,8 +1906,8 @@ namespace BlasterMaster
             pen.Dispose();
 
             // Level
-            DrawText(graphicsBuffer, "Wall Height: " + Convert.ToString(level), 452, 742, 16, FontStyle.Bold, Brushes.Black);
-            DrawText(graphicsBuffer, "Current Height: " + Convert.ToString(level), 275, 740, 16, FontStyle.Bold, Brushes.White);
+            //DrawText(graphicsBuffer, "Wall Height: " + Convert.ToString(level), 452, 742, 16, FontStyle.Bold, Brushes.Black);
+            //DrawText(graphicsBuffer, "Current Height: " + Convert.ToString(level), 275, 740, 16, FontStyle.Bold, Brushes.White);
 
             // Score + high score
             DrawText(graphicsBuffer, "Current Bricks Layed: " + Convert.ToString(score), 10, 10, 16, FontStyle.Bold, Brushes.White);
