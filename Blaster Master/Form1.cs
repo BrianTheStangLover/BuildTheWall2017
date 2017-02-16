@@ -84,7 +84,7 @@ namespace BlasterMaster
         private int tDiversInPath;
         private int tShootersInPath;
         private int enPlayerSprite;
-        private int lives = 4;
+        private int lives = 15;
         private int level = 1;
         private int score;
         private int highScore;
