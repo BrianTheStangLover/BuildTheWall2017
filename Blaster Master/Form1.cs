@@ -2127,7 +2127,7 @@ namespace BlasterMaster
             // Render text ...
             if (tScales.getTAcaleC() > 10)
             {
-                DrawText(graphicsBuffer, "Press ENTER ", 225,150, 16, FontStyle.Bold, Brushes.Black);
+                DrawText(graphicsBuffer, "Press ENTER ", 225,150, 16, FontStyle.Bold, Brushes.Black );
                 DrawText(graphicsBuffer, "Press ENTER ", 225, 150, 16, FontStyle.Bold, Brushes.Yellow);
             }
 
@@ -2136,7 +2136,7 @@ namespace BlasterMaster
             // Table heading: top 5 players
             for (i = 0; i <= 2; i++)
             {
-                DrawText(graphicsBuffer, "TOP 5 BUILDERS", 160 + i, 400 + i, 23, FontStyle.Bold, Brushes.DarkRed);
+                DrawText(graphicsBuffer, "TOP 5 BUILDERS", 160 + i, 400 + i, 23, FontStyle.Bold, Brushes.Black );
             }
             DrawText(graphicsBuffer, "TOP 5 BUILDERS", 160 + i, 400 + i, 23, FontStyle.Bold, Brushes.Yellow);
 
