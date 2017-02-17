@@ -1281,14 +1281,14 @@ namespace BlasterMaster
                                                 {
                                                     // Fetch random pickup to drop
                                                     bool voidPickup = false;
-                                                    c = getRandomNumber(3, 3); //Made only custom drop spawn
+                                                    c = getRandomNumber(0, 3); //Made only custom drop spawn
 
                                                     switch (c)
                                                     {
                                                         case 0: //:: x3 firepower ::
                                                             
                                                             // Void if player alrewady has it
-                                                            if (player.getFirePowerLevel() == 3)
+                                                            if (player.getFirePowerLevel() == 5)
                                                             {
                                                                 voidPickup = true;
                                                             }
