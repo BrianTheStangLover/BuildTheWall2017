@@ -2127,8 +2127,8 @@ namespace BlasterMaster
             // Render text ...
             if (tScales.getTAcaleC() > 10)
             {
-                DrawText(graphicsBuffer, "Press ENTER ", 200,100, 16, FontStyle.Bold, Brushes.Black);
-                DrawText(graphicsBuffer, "Press ENTER ", 200, 100, 16, FontStyle.Bold, Brushes.Yellow);
+                DrawText(graphicsBuffer, "Press ENTER ", 225,150, 16, FontStyle.Bold, Brushes.Black);
+                DrawText(graphicsBuffer, "Press ENTER ", 225, 150, 16, FontStyle.Bold, Brushes.Yellow);
             }
 
             //                           :: Render animated high score table (top 5 players) ::
