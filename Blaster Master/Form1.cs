@@ -2138,7 +2138,7 @@ namespace BlasterMaster
             {
                 DrawText(graphicsBuffer, "TOP 5 BUILDERS", 160 + i, 400 + i, 23, FontStyle.Bold, Brushes.Black );
             }
-            DrawText(graphicsBuffer, "TOP 5 BUILDERS", 160 + i, 400 + i, 23, FontStyle.Bold, Brushes.Yellow);
+            DrawText(graphicsBuffer, "TOP 5 BUILDERS", 160 + i, 400 + i, 23, FontStyle.Bold,Brushes.Yellow);
 
             // Score table: names & scores with drop shadow and white face
             for (i = 0; i <= 4; i++)
