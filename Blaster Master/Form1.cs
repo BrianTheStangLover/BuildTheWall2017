@@ -88,11 +88,12 @@ namespace BlasterMaster
         private int level = 1;
         private int score;
         private int highScore;
-        private int playerPivotPos = 61;
+        private int playerPivotPosX = 61;
+        private int playerPivotPosY = 61;
         private string playersName = "WallBuilder4Lyfe";
 
         // Boolean
-        private bool[] moveKeyPress = new bool[3];
+        private bool[] moveKeyPress = new bool[4];
         private bool shootKeyPress;
         private bool shootKeyUP;
         private bool levelCompleted;
@@ -843,8 +844,8 @@ namespace BlasterMaster
             if (!player.isDoingWarp())
             {
                 // Fetch player coords
-                x = player.getPivotX(playerPivotPos);
-                y = player.getPivotY(playerPivotPos);
+                x = player.getPivotX(playerPivotPosX);
+                y = player.getPivotY(playerPivotPosY);
 
                 // Apply player coords
                 player.setY(y + 25);
@@ -870,7 +871,8 @@ namespace BlasterMaster
 
                 // Allow player to move the ship as they rocket forward
                 // fetch coords and apply ...
-                x = player.getPivotX(playerPivotPos);
+                x = player.getPivotX(playerPivotPosX);
+                y = player.getPivotY(playerPivotPosY);
                 player.setX(x - 20);
             }
 
@@ -882,13 +884,23 @@ namespace BlasterMaster
                 // Shift ship left or right at player's request
                 if (moveKeyPress[0])
                 {
-                    if (playerPivotPos > 0)
-                        playerPivotPos -= 1;
+                    if (playerPivotPosX > 0)
+                        playerPivotPosX -= 1;
                 }
                 else if (moveKeyPress[1])
                 {
-                    if (playerPivotPos < 121)
-                        playerPivotPos += 1;
+                    if (playerPivotPosX < 121)
+                        playerPivotPosX += 1;
+                }
+                if (moveKeyPress[2])
+                {
+                    if (playerPivotPosY > 0)
+                        playerPivotPosY -= 1;
+                }
+                else if (moveKeyPress[3])
+                {
+                    if (playerPivotPosY < 121)
+                        playerPivotPosY += 1;
                 }
 
                 if (!levelCompleted)
@@ -980,6 +992,8 @@ namespace BlasterMaster
                 // Key flags off
                 moveKeyPress[0] = false;
                 moveKeyPress[1] = false;
+                moveKeyPress[2] = false;
+                moveKeyPress[3] = false;
 
             }
             else //- The player has been shot or an invader has crashed into them
@@ -995,7 +1009,8 @@ namespace BlasterMaster
                 else if (genWorkingCounter < 350)
                 {
                     // Place the new ship in the center of the screen
-                    playerPivotPos = 61;
+                    playerPivotPosX = 61;
+                    playerPivotPosY = 61;
 
                     // Explosion flag off
                     playerExplosion = false;
@@ -1561,7 +1576,8 @@ namespace BlasterMaster
             {
                 level = 1;
                 lives = 15;
-                playerPivotPos = 61;
+                playerPivotPosX = 61;
+                playerPivotPosY = 61;
                 player.setPlayerDead(false);
                 playerExplosion = false;
                 enPlayerSprite = 0;
@@ -1585,6 +1601,15 @@ namespace BlasterMaster
             else if (GetAsyncKeyState(37) != 0)
             {
                 moveKeyPress[1] = true;
+            }
+            //Up & Down
+            if (GetAsyncKeyState(38) != 0)
+            {
+                moveKeyPress[2] = true;
+            }
+            else if (GetAsyncKeyState(40) != 0)
+            {
+                moveKeyPress[3] = true;
             }
 
             // Fire 
@@ -2218,7 +2243,8 @@ namespace BlasterMaster
                 doingSOLevel = true;
                 genWorkingCounter = 0;
                 player.setDoWarp(false);
-                playerPivotPos = 61;
+                playerPivotPosX = 61;
+                playerPivotPosY = 61;
             }
         }
 
