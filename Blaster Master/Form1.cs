@@ -1290,7 +1290,7 @@ namespace BlasterMaster
                                                             // Void if player alrewady has it
                                                             if (player.getFirePowerLevel() == 5)
                                                             {
-                                                                voidPickup = true;
+                                                                voidPickup = false;
                                                             }
 
                                                             break;
@@ -1310,7 +1310,7 @@ namespace BlasterMaster
                                                             // Void if player already has it
                                                             if (player.getFirePowerLevel() == 5)
                                                             {
-                                                                voidPickup = true;
+                                                                voidPickup = false;
                                                             }
                                                             break;
                                                     }
