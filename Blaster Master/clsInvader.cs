@@ -88,7 +88,7 @@ namespace BlasterMaster
 
             double x = 0;
             double y = 0;
-            double deg = 360 / 12;
+            double deg = 0; //360 / 12;
             double radius = 25;
 
             // Inc time scalers
@@ -160,12 +160,12 @@ namespace BlasterMaster
                 //:: Dive towards player ::
 
                 // Twirl back and forth
-                diveX += 1;
-                diveX = diveX % 64;
-                if (diveX < 32)
-                    x -= 2;
-                if (diveX > 32)
-                    x += 2;
+                //diveX += 1;
+                //diveX = diveX % 64;
+                //if (diveX < 32)
+                //    x -= 2;
+                //if (diveX > 32)
+                //    x += 2;
 
                 // Apply x & y locations ...
                 base.setX(base.getX() + Convert.ToInt32(x));
