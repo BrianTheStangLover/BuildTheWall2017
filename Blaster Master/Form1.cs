@@ -2307,7 +2307,9 @@ namespace BlasterMaster
                DrawText(graphicsBuffer, "SHOOT", 180, 535, 12, FontStyle.Bold, Brushes.White);
                DrawText(graphicsBuffer, "LEFT", 272, 535, 12, FontStyle.Bold, Brushes.White);
                DrawText(graphicsBuffer, "RIGHT", 360, 535, 12, FontStyle.Bold, Brushes.White);
-               DrawText(graphicsBuffer, "Game Controls", 225, 555, 14, FontStyle.Bold, Brushes.Red);
+                DrawText(graphicsBuffer, "UP", 400, 435, 12, FontStyle.Bold, Brushes.White);
+                DrawText(graphicsBuffer, "DOWN", 400, 635, 12, FontStyle.Bold, Brushes.White);
+                DrawText(graphicsBuffer, "Game Controls", 225, 555, 14, FontStyle.Bold, Brushes.Red);
             }
             else
             {
