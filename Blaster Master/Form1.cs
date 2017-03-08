@@ -94,7 +94,7 @@ namespace BlasterMaster
 
         // Boolean
         private bool[] moveKeyPress = new bool[4];
-        private bool shootKeyPress;
+        private bool shootKeyPress; 
         private bool shootKeyUP;
         private bool levelCompleted;
         private bool AppRunning = true;
